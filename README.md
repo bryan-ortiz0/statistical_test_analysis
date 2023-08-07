@@ -9,8 +9,15 @@ Analyzing data spanning 2017 to 2019, we examine ACT participation rates, ACT co
 | mean_of_values      | function                    | ACT/SAT | Function used to manually compute the mean                                                                                                               |
 | standard_dev        | function                    | ACT/SAT | Function used to manually compute the standard deviation                                                                                                 |
 | data_cleaner        | function                    | ACT/SAT | Function used to take in a string that is a number and percent symbol (%) and converts string to a float that is the decimal approximation of the percent |
-| state_abbreviations | dict                        | ACT/SAT | Dictionary used to change state names from their full name to their abbreviated letters                                                                  |
-| census_regions_dict | dict                        | ACT/SAT | Dictionary used to categorize abbreviations with their respected census regions                                                                           |
+| get_state_abbreviation      | function                    | ACT/SAT | Function used to change state names to their respected abbreviations                                                                                                               |
+| get_census_regions      | function                    | ACT/SAT | Function used to changed abbreviated states to their respected census regions                                                                                                               |
+| clean_act_2017      | function                    | ACT/SAT | Function used to clean act2017.csv                                                                                                               |
+| clean_act_2018      | function                    | ACT/SAT | Function used to clean act2018.csv                                                                                                               |
+| clean_act_2019      | function                    | ACT/SAT | Function used to clean act2019.csv                                                                                                                |
+| clean_sat_2017      | function                    | ACT/SAT | Function used to clean sat2017.csv                                                                                                               |
+| clean_sat_2018      | function                    | ACT/SAT | Function used to clean sat2018.csv                                                                                                               |
+| clean_sat_2019      | function                    | ACT/SAT | Function used to clean sat2019.csv                                                                                                               |
+| process_and_save_data      | function                    | ACT/SAT | Function used to merge ACT and SAT data                                                                                                               |
 | act2017             | pandas.core.frame.DataFrame | ACT/SAT | ACT 2017 CSV file used to manipulate data                                                                                                                 |
 | new_act2017_dict    | dict                        | ACT/SAT | Dictionary used to rename column names as lower case                                                                                                      |
 | act2018             | pandas.core.frame.DataFrame | ACT/SAT | ACT 2018 CSV file used to manipulate data                                                                                                                 |
@@ -24,11 +31,8 @@ Analyzing data spanning 2017 to 2019, we examine ACT participation rates, ACT co
 | sat2019             | pandas.core.frame.DataFrame | ACT/SAT | SAT 2019 CSV file used to manipulate data                                                                                                                 |
 | new_sat2019_dict    | dict                        | ACT/SAT | Dictionary used to rename column names as lower case                                                                                                      |
 | merge_2017          | pandas.core.frame.DataFrame | ACT/SAT | Merged data for act2017 and sat2017                                                                                                                       |
-| new_merge2017_dict  | dict                        | ACT/SAT | Dictionary used to rename column names as lower case and underscores                                                                                      |
 | merge_2018          | pandas.core.frame.DataFrame | ACT/SAT | Merged data for act2018 and sat2018                                                                                                                       |
-| new_merge2018_dict  | dict                        | ACT/SAT | Dictionary used to rename column names as lower case and underscores                                                                                      |
 | merge_2019          | pandas.core.frame.DataFrame | ACT/SAT | Merged data for act2019 and sat2019                                                                                                                       |
-| new_merge2019_dict  | dict                        | ACT/SAT | Dictionary used to rename column names as lower case and underscores                                                                       
 
 # Executive Summary
 
